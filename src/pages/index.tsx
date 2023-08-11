@@ -3,6 +3,8 @@ import {Button, Container, Form, InputGroup, Spinner, Stack} from "react-bootstr
 import React from "react";
 import {ChevronRight} from "react-bootstrap-icons";
 import {nameRegex} from "@/lib/name";
+import favIcon from "../../public/favicon.ico";
+import Image from "next/image";
 
 export default function Home() {
   const [isLoading, setIsLoading] = React.useState(false);
@@ -90,6 +92,9 @@ export default function Home() {
                   value={`${status || "Enter a name and press \"Greet\"!"}\n`}
                 />
               </Stack>
+            </Stack>
+            <Stack direction="horizontal" gap={1}>
+              Built with <Image alt="NextJS" src={favIcon}/>
             </Stack>
           </Stack>
         </Container>

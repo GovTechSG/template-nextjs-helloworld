@@ -1,0 +1,7 @@
+{
+  "name": "template-nextjs-helloworld",
+  "framework": "nextjs",
+  "scripts": {
+    "start": "next start"
+  }
+}
